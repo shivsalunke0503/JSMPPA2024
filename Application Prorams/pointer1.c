@@ -15,14 +15,6 @@ int main()
     float *fPointer = &f;
     double *dPointer= &d;
     printf("the size of iPonter is %d \n",sizeof(*iPointer));
-
-
-
-
-
-
-
-
-    
+   
     return 0;
 }
