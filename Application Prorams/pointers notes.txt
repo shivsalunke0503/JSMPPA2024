@@ -1,0 +1,82 @@
+ 
+0.The use of pointers allows low-level memory access
+
+The use of pointers in C can be divided into three steps:
+
+Pointer Declaration
+Pointer Initialization
+Pointer Dereferencing
+
+
+Pointer Declaration
+int *ptr;
+The pointer declared here will point to some random memory address as it is not initialized. Such pointers are called wild pointers.
+
+
+
+Pointer Initialization
+int var = 10;
+int * ptr;
+ptr = &var;
+
+OR
+int *ptr = &var;
+Pointer initialization is the process where we assign some initial value to the pointer variable
+
+Pointer Dereferencing
+Dereferencing a pointer is the process of accessing the value stored in the memory address specified in the pointer. 
+
+Types of Pointers in C
+1. Integer Pointers
+	int *ptr;  // These pointers are pronounced as Pointer to Integer.
+
+2. Array Pointer
+char *ptr = &array_name;
+
+3. Structure Pointer
+struct struct_name *ptr;
+
+4. Function Pointers
+int (*ptr)(int, char);
+
+5. Double Pointers (Pointer to Pointer)
+datatype ** pointer_name;
+
+6. NULL Pointer (The Null Pointers are those pointers that do not point to any memory location.)
+data_type *pointer_name = NULL;
+        or
+pointer_name = NULL
+It is said to be good practice to assign NULL to the pointers currently not in use.
+
+7. Void Pointer(They are also called generic pointers as they can point to any type and can be typecasted to any type)
+
+void * pointer_name;
+
+8. Wild Pointers
+int *ptr;
+char *str;
+
+that have not been initialized with something yet.
+These types of C-pointers can cause problems in our programs and can eventually cause them to crash
+
+9. Constant Pointers(In constant pointers, the memory address stored inside the pointer is constant and cannot be modified once it is defined. It will always point to the same memory address.)
+data_type * const pointer_name;
+
+
+10. Pointer to Constant
+The pointers pointing to a constant value that cannot be modified are called pointers to a constant. Here we can only access the data pointed by the pointer, but cannot modify it. Although, we can change the address stored in the pointer to constant.
+const data_type * pointer_name;
+
+Other Types of Pointers in C:
+
+Far pointer: A far pointer is typically 32-bit that can access memory outside the current segment.
+Dangling pointer: A pointer pointing to a memory location that has been deleted (or freed) is called a dangling pointer.
+Huge pointer: A huge pointer is 32-bit long containing segment address and offset address.
+Complex pointer: Pointers with multiple levels of indirection.
+Near pointer: Near pointer is used to store 16-bit addresses means within the current segment on a 16-bit machine.
+Normalized pointer: It is a 32-bit pointer, which has as much of its value in the segment register as possible.
+File Pointer: The pointer to a FILE data type is called a stream pointer or a file pointer.
+
+
+
+
