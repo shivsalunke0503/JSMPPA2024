@@ -18,7 +18,7 @@ int main()
     obj1.i =10;
     printf("i = %d\n",obj1.i); //10
 
-    printf("ch = %c\n",obj1.ch);//black
+    printf("ch = %c\n",obj1.ch);//blank
 
 
     return 0;
