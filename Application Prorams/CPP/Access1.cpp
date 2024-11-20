@@ -36,9 +36,9 @@ class Hello : public Demo
     public :
         void HelloDisplay()
         {
-        cout<<"value of i :"<<i<<endl; //
+        // cout<<"value of i :"<<i<<endl; //Not Allowed
         cout<<"value of j :"<<j<<endl; 
-        cout<<"value of k :"<<k<<endl; //
+        // cout<<"value of k :"<<k<<endl; //Not Allowed
         cout<<"value of a :"<<a<<endl;
         }
 };
@@ -48,12 +48,9 @@ class Hello : public Demo
 
 int main()
 {
-    Demo obj;
-    // cout<<"value of i :"<<obj.i<<endl; //Not allowed
-    cout<<"value of j :"<<obj.j<<endl; //allowed
-    // cout<<"value of k :"<<obj.k<<endl; //Not allowed
-    // cout<<"value of a :"<<obj.a<<endl; //Not allowed
+    Hello hobj;
+    hobj.display();
+    hobj.HelloDisplay();
 
-    obj.display();
     return 0;
 }

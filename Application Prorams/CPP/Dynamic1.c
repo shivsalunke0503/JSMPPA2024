@@ -19,7 +19,6 @@ int  main()
     ptr[2]=30;
     printf("ptr->[1]  %d:",ptr[1]);
     free(ptr);
-    printf("ptr->[1]  %d:",ptr[1]);
     
     return 0;
 }
