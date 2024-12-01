@@ -7,7 +7,7 @@ class Demo
     Demo(int a=10, int b=20)
     {
         i=a;
-        j=b;
+        j=b; 
     }
 };
 
