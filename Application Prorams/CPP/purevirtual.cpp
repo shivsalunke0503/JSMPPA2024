@@ -23,7 +23,7 @@ public:
 
 int main()
 {
-    // Parent pobj;
+    // Parent pobj; // compilatation error VTABLE contains blank entry for abstract method
     Parent *ptr = new Child;
     ptr -> fun();
     ptr -> gun();

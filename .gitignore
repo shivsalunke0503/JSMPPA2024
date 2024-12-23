@@ -1,1 +1,7 @@
 images/
+*.class
+*.exe
+*.exe
+/Assignments PDF
+AssignmentsRecord.xlsx
+*.tmp
